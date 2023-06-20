@@ -5,7 +5,7 @@ RUN apt-get install -y nginx zip curl
 
 RUN echo "daemon off;" >>/etc/nginx/nginx.conf
 RUN curl -o /var/www/html/master.zip -L https://codeload.github.com/KrisIliev/2048-clone/zip/master
-RUN cd /var/www/html/ && unzip master.zip && mv 2048-master/* . && rm -rf 2048-master.zip
+RUN cd /var/www/html/ && unzip master.zip && mv 2048-clone-master/* . && rm -rf 2048-clone-master.zip
 
 EXPOSE 80
 
